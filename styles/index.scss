@@ -9,6 +9,8 @@
 @import 'headline.scss';
 @import 'tips.scss';
 @import 'order.scss';
+@import 'audience.scss';
+
 *{
     box-sizing: border-box;
 }
@@ -20,13 +22,14 @@ html{
 .page{
     width: 100%;
     overflow-x: hidden;
-}
+
 @media screen and (min-width: 400px) {
     .page{
     margin: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    max-width: 360px;
     }
 }
 

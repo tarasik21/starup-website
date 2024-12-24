@@ -1,4 +1,4 @@
-header {
+.header {
     height: 64px;
     width: 100%;
     background-color: #f3c6bd; 
@@ -43,7 +43,14 @@ header {
 }
 
 .logo {
-    display: flex;
+
+
+    &__footer{
+        @include for-large-down {
+            display: none;
+        }
+
+    }
 
     &__image {
         width: 60px; 

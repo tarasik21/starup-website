@@ -1,0 +1,149 @@
+.audience {
+    padding: 20px;
+    text-align: center;
+    background-color: $color-light;
+
+    &__content {
+        margin-bottom: 40px;
+
+        &-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: $color-dark;
+        }
+
+        &-subtitle {
+            font-size: 16px;
+            color: $color-grey;
+            margin-bottom: 30px;
+        }
+
+        &-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+
+            .action__button {
+                background-color: $color-dark-blue;
+                color: $color-white;
+                padding: 12px 20px;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken($color-dark-blue, 10%);
+                }
+            }
+
+            .audience__learn-more {
+                background-color: $color-white;
+                color: $color-dark;
+                padding: 10px 20px;
+                font-size: 14px;
+                font-weight: 600;
+                border: 1px solid $color-dark;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: color 0.3s, background-color 0.3s ease;
+
+                &:hover {
+                    background-color: $color-dark;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+        &__card {
+            background-color: $color-white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            &-image {
+                width: 142px; 
+                height: 142px;
+                margin: 0 auto 15px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            &-title {
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-dark;
+            }
+
+            &--highlighted {
+                background-color: $color-blue;
+                color: $color-white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+                &-title {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+
+    @include for-large-up {
+        padding: 40px;
+
+        &__cards {
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 30px;
+
+            &__card {
+                padding: 30px;
+
+                &-image {
+                    width: 290px; 
+                    height: 300px;
+                }
+
+                &-title {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__content {
+            &-actions {
+                flex-direction: row;
+                gap: 20px;
+
+                .action__button,
+                .audience__learn-more {
+                    font-size: 16px;
+                    padding: 15px 30px; 
+                }
+
+                .action__button {
+                    margin-right: 10px; 
+                }
+
+                .audience__learn-more {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
