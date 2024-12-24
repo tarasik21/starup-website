@@ -60,12 +60,12 @@
         }
     }
 
-    .audience-cards {
+    .audience__cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
 
-        .audience-card {
+        .audience__card {
             background-color: $color-white;
             border-radius: 10px;
             text-align: center;

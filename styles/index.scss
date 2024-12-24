@@ -19,10 +19,10 @@ html{
     font-family: "Work Sans", sans-serif;
     color: #2b292d;
 }
-.page{
-    width: 100%;
-    overflow-x: hidden;
-}
+.page {
+    width: 1400px;
+    margin: auto;
+  }
 @media screen and (min-width: 400px) {
     .page{
     margin: auto;

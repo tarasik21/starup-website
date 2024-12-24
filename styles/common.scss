@@ -1,12 +1,18 @@
-.action__button{
-    background-color: #3040c4;
-    color: $color-white;
+.button{
     width: 160px;
     height: 48px;
     font-size: 18px;
     font-weight: 700;
     border-radius: 2px;
     border: none;
+    &_blue{
+        background-color: $color-dark-blue;
+        color: $color-white;
+    }
+    &_white{
+        background-color: $color-white;
+        color: $color-dark-blue;
+    }
 }
 .hide_desktop{
     @include for-large-up{
