@@ -3,29 +3,29 @@
     text-align: center;
     background-color: $color-light;
 
-    &__content {
+    .audience-content {
         margin-bottom: 40px;
 
-        &-title {
+        .audience-title {
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 20px;
             color: $color-dark;
         }
 
-        &-subtitle {
+        .audience-subtitle {
             font-size: 16px;
             color: $color-grey;
             margin-bottom: 30px;
         }
 
-        &-actions {
+        .audience-actions {
             display: flex;
             flex-direction: column;
             gap: 10px;
             justify-content: center;
 
-            .action__button {
+            .action-button {
                 background-color: $color-dark-blue;
                 color: $color-white;
                 padding: 12px 20px;
@@ -41,7 +41,7 @@
                 }
             }
 
-            .audience__learn-more {
+            .audience-learn-more {
                 background-color: $color-white;
                 color: $color-dark;
                 padding: 10px 20px;
@@ -60,12 +60,12 @@
         }
     }
 
-    &__cards {
+    .audience-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
 
-        &__card {
+        .audience-card {
             background-color: $color-white;
             border-radius: 10px;
             text-align: center;
@@ -77,70 +77,69 @@
                 transform: translateY(-5px);
             }
 
-            &-image {
-                width: 142px; 
+            .audience-card-image {
+                width: 142px;
                 height: 142px;
                 margin: 0 auto 15px;
                 border-radius: 50%;
                 object-fit: cover;
             }
 
-            &-title {
+            .audience-card-title {
                 font-size: 16px;
                 font-weight: 600;
                 color: $color-dark;
             }
 
-            &--highlighted {
+            &.audience-card-highlighted {
                 background-color: $color-blue;
                 color: $color-white;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-                &-title {
+                .audience-card-title {
                     color: $color-white;
                 }
             }
         }
     }
 
-
     @include for-large-up {
         padding: 40px;
 
-        &__cards {
-            grid-template-columns: repeat(4, 1fr); 
+        .audience-cards {
+            grid-template-columns: repeat(4, 1fr);
             gap: 30px;
 
-            &__card {
+            .audience-card {
                 padding: 30px;
 
-                &-image {
-                    width: 290px; 
+                .audience-card-image {
+                    width: 290px;
                     height: 300px;
                 }
 
-                &-title {
+                .audience-card-title {
                     font-size: 18px;
                 }
             }
         }
 
-        &__content {
-            &-actions {
+        .audience-content {
+            .audience-actions {
                 flex-direction: row;
                 gap: 20px;
 
-                .action__button,
-                .audience__learn-more {
+                .action-button,
+                .audience-learn-more {
                     font-size: 16px;
-                    padding: 15px 30px; 
+                    padding: 15px 30px;
                 }
 
-                .action__button {
-                    margin-right: 10px; 
+                .action-button {
+                    margin-right: 10px;
                 }
 
-                .audience__learn-more {
+                .audience-learn-more {
                     margin-left: 10px;
                 }
             }

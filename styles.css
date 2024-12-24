@@ -388,12 +388,17 @@
 }
 
 .header {
-  height: 64px;
-  width: 100%;
-  background-color: #f3c6bd;
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  width: 1140px;
+  height: 62px;
+  margin: auto;
+  justify-content: space-between;
+  width: 100%;
+  height: 64px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 16px rgba(44, 50, 65, 0.08);
+  padding: 0 0 0 15px;
 }
 @media screen and (min-width: 1400px) {
   .header {
@@ -451,6 +456,7 @@
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
+  margin: 0 0 0 8px;
 }
 .logo__description {
   display: none;
@@ -729,27 +735,27 @@
   text-align: center;
   background-color: #f4f5f7;
 }
-.audience__content {
+.audience .audience-content {
   margin-bottom: 40px;
 }
-.audience__content-title {
+.audience .audience-content .audience-title {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #2b292d;
 }
-.audience__content-subtitle {
+.audience .audience-content .audience-subtitle {
   font-size: 16px;
   color: #6c757d;
   margin-bottom: 30px;
 }
-.audience__content-actions {
+.audience .audience-content .audience-actions {
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
 }
-.audience__content-actions .action__button {
+.audience .audience-content .audience-actions .action-button {
   background-color: #3040c4;
   color: #ffffff;
   padding: 12px 20px;
@@ -760,10 +766,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.audience__content-actions .action__button:hover {
+.audience .audience-content .audience-actions .action-button:hover {
   background-color: rgb(37.9672131148, 50.6229508197, 155.0327868852);
 }
-.audience__content-actions .audience__learn-more {
+.audience .audience-content .audience-actions .audience-learn-more {
   background-color: #ffffff;
   color: #2b292d;
   padding: 10px 20px;
@@ -774,16 +780,16 @@
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s ease;
 }
-.audience__content-actions .audience__learn-more:hover {
+.audience .audience-content .audience-actions .audience-learn-more:hover {
   background-color: #2b292d;
   color: #ffffff;
 }
-.audience__cards {
+.audience .audience-cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
-.audience__cards__card {
+.audience .audience-cards .audience-card {
   background-color: #ffffff;
   border-radius: 10px;
   text-align: center;
@@ -791,60 +797,60 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
-.audience__cards__card:hover {
+.audience .audience-cards .audience-card:hover {
   transform: translateY(-5px);
 }
-.audience__cards__card-image {
+.audience .audience-cards .audience-card .audience-card-image {
   width: 142px;
   height: 142px;
   margin: 0 auto 15px;
   border-radius: 50%;
   object-fit: cover;
 }
-.audience__cards__card-title {
+.audience .audience-cards .audience-card .audience-card-title {
   font-size: 16px;
   font-weight: 600;
   color: #2b292d;
 }
-.audience__cards__card--highlighted {
+.audience .audience-cards .audience-card.audience-card-highlighted {
   background-color: #009b4d;
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.audience__cards__card--highlighted-title {
+.audience .audience-cards .audience-card.audience-card-highlighted .audience-card-title {
   color: #ffffff;
 }
 @media screen and (min-width: 1400px) {
   .audience {
     padding: 40px;
   }
-  .audience__cards {
+  .audience .audience-cards {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
-  .audience__cards__card {
+  .audience .audience-cards .audience-card {
     padding: 30px;
   }
-  .audience__cards__card-image {
+  .audience .audience-cards .audience-card .audience-card-image {
     width: 290px;
     height: 300px;
   }
-  .audience__cards__card-title {
+  .audience .audience-cards .audience-card .audience-card-title {
     font-size: 18px;
   }
-  .audience__content-actions {
+  .audience .audience-content .audience-actions {
     flex-direction: row;
     gap: 20px;
   }
-  .audience__content-actions .action__button,
-  .audience__content-actions .audience__learn-more {
+  .audience .audience-content .audience-actions .action-button,
+  .audience .audience-content .audience-actions .audience-learn-more {
     font-size: 16px;
     padding: 15px 30px;
   }
-  .audience__content-actions .action__button {
+  .audience .audience-content .audience-actions .action-button {
     margin-right: 10px;
   }
-  .audience__content-actions .audience__learn-more {
+  .audience .audience-content .audience-actions .audience-learn-more {
     margin-left: 10px;
   }
 }
