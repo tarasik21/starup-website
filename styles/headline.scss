@@ -6,6 +6,9 @@
         width: 1140px;
         margin-top: 84px;
         display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
         margin-bottom: 77px;
     }
     &__content{

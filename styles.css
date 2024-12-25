@@ -411,6 +411,7 @@
   .header {
     background-color: transparent;
     box-shadow: unset;
+    padding: 39px 130px;
   }
 }
 .header__button {
@@ -419,6 +420,7 @@
 @media screen and (min-width: 1400px) {
   .header__button {
     display: block;
+    width: 160px;
   }
 }
 .header__menu-button {
@@ -536,6 +538,9 @@
     width: 1140px;
     margin-top: 84px;
     display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
     margin-bottom: 77px;
   }
 }
