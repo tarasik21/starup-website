@@ -20,12 +20,15 @@ html{
     color: #2b292d;
 }
 .page {
-    width: 1400px;
+    width: 320px;
+    position: relative;
     margin: auto;
+
+
   }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 1400px) {
     .page{
-    margin: auto;
+    width: 1400px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

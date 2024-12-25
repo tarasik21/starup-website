@@ -31,15 +31,19 @@
             z-index: 1;
         }
     }
-    &_description{
+    &__description{
         margin-top: 24px;
         margin-bottom: 0;
         font-size: 24px;
         line-height: 34px;
-
+        font-weight: 400;
     }
     &__actions{
         margin-top: 30px;
+        //padding: 0 15px;
+        *:first-child{
+            margin-bottom: 10px;
+        }
         @include for-large-up{
             margin-top: 58px;
             display: flex;
@@ -70,6 +74,7 @@
             width: 100%;
         }
     }
+
 }
 
 
