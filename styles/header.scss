@@ -62,9 +62,9 @@ display: flex;
     }
 
     &__image {
-        width: 60px; 
-        height: 60px;
-        margin-right: 15px;
+        width: 48px; 
+        height: 48px;
+        margin-right: 13px;
 
         @include for-large-up {
             width: 60px;

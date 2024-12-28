@@ -2,6 +2,14 @@
     padding: 20px;
     text-align: center;
     background-color: $color-light;
+    &_button{
+
+        @include for-large-down{
+          margin-bottom: 15px;
+          width: 100%;
+  
+          }
+      }
 
     .audience-content {
         margin-bottom: 40px;
