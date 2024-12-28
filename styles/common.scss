@@ -1,34 +1,15 @@
-.button{
+.action-button {
+  width: 160px;
   height: 48px;
   font-size: 18px;
   font-weight: 700;
-  width: 160px;
+  color: $light-color;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
+    #3040c4;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  background-blend-mode: overlay, normal;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
-  &_blue{
-    color: #FFFFFF;
-    background-color: #3040C4;
-
-  }
-  &_white{
-    color: #3040C4;
-    background-color: #FFFFFF;
-
-  }
-}
-.hide_desktop{
-    @include for-large-up{
-        display: none;
-    }
-}
-.hide_mobile{
-    @include for-large-down{
-        display: none;
-    }
-}
-.icon-arrow__right{
-    display: block;
-    background-image: ('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
-    width: 7px;
-    height: 12px;
 }

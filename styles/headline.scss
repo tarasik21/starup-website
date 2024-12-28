@@ -1,10 +1,51 @@
 .headline {
+  position: relative;
+  padding-left: 130px;
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    width: 754px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    margin: 76px 0 0 -4px;
+  }
+
+  &__text {
+    width: 456px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: 43px 0 58px;
+  }
+
+  &__banner {
+    position: absolute;
+    right: 25px;
+    bottom: -49px;
+  }
+
+  &__action-button {
+    &:nth-child(2) {
+      width: 157px;
+      background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.05) 0%,
+          rgba(255, 255, 255, 1e-5) 100%
+        ),
+        #ffffff;
+      color: $blue-color;
+      margin-left: 5px;
+    }
+  }
+}
+
+@include small-screen {
+  .headline {
     position: relative;
     padding: 35px 15px 36px;
-    @include for-large-up{
-        position: relative;
-        padding-left: 130px;
-    }
 
     &__title {
       width: 100%;
@@ -12,52 +53,30 @@
       line-height: 50px;
       letter-spacing: -0.31px;
       margin: 0;
-      @include for-large-up{
-        position: relative;
-        z-index: 2;
-        width: 754px;
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 78px;
-        letter-spacing: -0.5px;
-        margin: 76px 0 0 -4px;
-    }
     }
 
     &__text {
       width: 100%;
       margin: 29px 0 32px;
-      @include for-large-up{
-        width: 456px;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 34px;
-        margin: 43px 0 58px;
-    }
     }
 
     &__banner {
-        position: relative;
-        bottom: 0px;
-        right: 15px;
-        display: block;
-        width: 320px;
-        height: 180px;
-      @include for-large-up{
-        all: unset;
-        position: absolute;
-        max-width: 796px;
-        max-height: 448px;
-        right: 25px;
-        top: 84px;
-        }
+      position: relative;
+      bottom: 0px;
+      right: 15px;
+      display: block;
+      width: 320px;
+      height: 180px;
     }
-    &_button{
 
-      @include for-large-down{
-        margin-bottom: 15px;
-        width: 100%;
-
-        }
+    &__action-button:first-child {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    
+    &__action-button:last-child {
+      width: 100%;
+      margin: 0 0 33px 0;
     }
   }
+}

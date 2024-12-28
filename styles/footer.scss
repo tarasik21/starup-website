@@ -1,174 +1,154 @@
-.footer{
-    margin-top: auto;
+.footer {
     display: flex;
-    flex-direction: column;
-    &__description{
-        display: none;
-        line-height: 26px;
-        font-size: 18px;
-        margin-top: 26px;
-        width: 360px;
-        color: $text-color-light-grey;
-        @include for-large-up{
-            display: block;
-        }
-    }
-    &__line{
-        border-top: 1px solid #2b292d;
-        width: 100%;
-        opacity: 0.1;
-        margin: 0;
-        margin-top: 40px;
-        @include for-large-up{
-            margin: 0;
-    
-        }
-    }
-    &-links{
-        margin-left: 15px;
-        display: flex;
-        flex-direction: column;
-        
-        @include for-large-up{
-            height: 50px;
-            width: 1140px;
-            flex-direction: row;
-            margin: 0 auto;
-            align-items: center;
-            width: 100%;
-        }
-    }
-
-}
-.about-company{
-    margin-top: 44px;
-    @include for-large-up{
-        width: 360px;
-    }
-
-}
-
-.footer-navigation{
     flex-wrap: wrap;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    @include for-large-up{
-        width: 1140px;
-        margin: 0 auto;
-        height: 338px;
-        display: flex;
-        flex-direction: row;
+    min-height: 389px;
+    padding: 43px 130px 0;
+  
+    &__description {
+      width: 360px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      color: $main-text-color;
+      margin: 26px 0 31px;
     }
-}
-.downloads{
-    margin: 25px 15px 0 15px;
-    display: flex;
-    justify-content: center;
-    @include for-large-up{
-        margin: 0;
-        margin-top: 25px;
-        justify-content: left;
+  
+    &__button {
+      width: 135px;
+      height: 40px;
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png);
+      border: none;
+      cursor: pointer;
+  
+      &:nth-child(2) {
+        width: 116px;
+        background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png);
+        margin-left: 5px;
+      }
     }
-    &__item{
-        margin-right: 10px; 
+  
+    &__link-wrapper {
+      min-width: 265px;
+  
+      &:nth-child(2) {
+        margin: 20px 29px 0 126px;
+      }
+  
+      &:nth-child(3) {
+        margin: 20px 0 0 0;
+      }
     }
-}
-.additional-navigation{
-    margin-left: 15px;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
-    @include for-large-up{
-        margin-top: 60px;
-        margin-left: auto;
-        flex-direction: row;
+  
+    &__links-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 18px;
     }
-    &__column{
-        margin-top: 30px;
-        @include for-large-up{
-            margin-top: 0;
-            margin-right: 29px;
-        }
+  
+    &__links-list {
+      list-style: none;
     }
-}
-.nav-links{
-    width: 265px;
-    &__title {
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 28px;
-        color: #2B292D;
-        margin: 0;
+  
+    &__link > a {
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 35px;
+      color: $main-text-color;
     }
-    &__list{
-        list-style-type: none;
-        font-size: 18px;
-        line-height: 30px;
-        color: $text-color-light-grey;
-        padding: 0;
-        margin: 0;
+  
+    &__extra-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 60px;
     }
-}
-
-
-.terms{
-    line-height: 22px;
-    font-size: 14px;
-    margin-top: 30px;
-    @include for-large-up{
-        line-height: 50px;
-        margin-top: 0;
-
+  
+    &__bottom-links {
+      display: flex;
+      justify-content: space-between;
+      min-width: 180px;
+      list-style: none;
     }
-    &__items{
-        text-decoration: none;
-        color: $text-color-light-grey;
-        margin-right: 22px;
+  
+    &__bottom-link > a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      color: $main-text-color;
     }
-}
-.social-links{
-    margin-top: 30px;
-    margin-bottom: 23px;
-    @include for-large-up{
-        margin-left: auto;
-        margin-bottom: 0;
-
+  
+    &__bottom-icons {
+      min-width: 97px;
+      margin: 1px 2px 0 0;
     }
-    &__item{
-        margin-left: 20px;
-        &:first-child{
-            margin-left: 0;
-        
-        }
+  
+    &__bottom-icon {
+      display: inline-block;
+      width: 18px;
+      height: 17px;
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png)
+        center no-repeat;
+  
+      &_fb {
+        background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
+      }
+  
+      &_lk {
+        background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
+      }
     }
-}
-
-.logo-vertical{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include for-large-up{
+  
+    &__logo {
+      &_footer-wrap {
+        padding-top: 7px;
+      }
+    }
+  }
+  
+  @include small-screen {
+    .footer {
+      display: block;
+      align-items: center;
+      padding: 39px 15px 22px;
+  
+      &__buttons-wrap {
+        margin: 0 0 69px 15px;
+      }
+  
+      &__description {
         display: none;
+      }
+  
+      &__link-wrapper {
+        width: 100%;
+  
+        &:nth-child(2) {
+          margin: 0;
+        }
+  
+        &:nth-child(3) {
+          margin: 30px 0 0 0;
+        }
+      }
+  
+      &__link > a {
+        line-height: 35.2px;
+      }
+  
+      &__extra-wrapper {
+        display: block;
+        width: 100%;
+        margin: 0;
+      }
+  
+      &__bottom-links {
+        width: 180px;
+        margin: 29px 0 33px;
+      }
+      
+      &__bottom-icons {
+        width: 97px;
+      }
     }
-&__image{
-    width: 60px;
-    height: 60px;
-}
-&_name{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    margin-top: 20px; ;
-
-}
-&__decription{
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: $text-color-light-grey;
-}
-}
-
-
+  }
+  

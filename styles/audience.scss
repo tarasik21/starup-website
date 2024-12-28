@@ -1,156 +1,122 @@
 .audience {
-    padding: 20px;
     text-align: center;
-    background-color: $color-light;
-    &_button{
-
-        @include for-large-down{
-          margin-bottom: 15px;
-          width: 100%;
+    background-color: rgba(0, 161, 198, 0.07);
+    padding: 114px 0 110px;
+    margin: 0 auto 44px;
   
-          }
+    &__first-title {
+      font-size: 22px;
+      font-weight: 700;
+    }
+  
+    &__second-title {
+      max-width: 555px;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      margin: 27px auto 30px;
+    }
+  
+    &__text {
+      max-width: 555px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 34px;
+      margin: 0 auto 38px;
+    }
+  
+    &__learn-more {
+      background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.05) 0%,
+          rgba(255, 255, 255, 1e-5) 100%
+        ),
+        #ffffff;
+      color: rgba(0, 0, 0, 1);
+      padding-top: 1px;
+      margin: 0 0 111px 3px;
+    }
+  
+    &__cads-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 1139px;
+      height: 300px;
+      margin: 0 auto;
+    }
+  }
+  
+  .user-card {
+    display: block;
+    text-align: center;
+    width: 262px;
+    height: 300px;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
+      #ffffff;
+    border-radius: 8px;
+    & > img {
+      display: block;
+      margin: 22px auto 24px;
+    }
+  
+    &:hover {
+      background-color: $blue-color;
+      color: $light-color;
+    }
+  }
+  
+  @include small-screen {
+    .audience {
+      padding: 49px 15px 35px;
+      margin: 0;
+  
+      &__first-title {
+        line-height: 34px;
       }
-
-    .audience-content {
-        margin-bottom: 40px;
-
-        .audience-title {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: $color-dark;
-        }
-
-        .audience-subtitle {
-            font-size: 16px;
-            color: $color-grey;
-            margin-bottom: 30px;
-        }
-
-        .audience-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            justify-content: center;
-
-            .action-button {
-                background-color: $color-dark-blue;
-                color: $color-white;
-                padding: 12px 20px;
-                font-size: 14px;
-                font-weight: 600;
-                border-radius: 5px;
-                border: none;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-
-                &:hover {
-                    background-color: darken($color-dark-blue, 10%);
-                }
-            }
-
-            .audience-learn-more {
-                background-color: $color-white;
-                color: $color-dark;
-                padding: 10px 20px;
-                font-size: 14px;
-                font-weight: 600;
-                border: 1px solid $color-dark;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: color 0.3s, background-color 0.3s ease;
-
-                &:hover {
-                    background-color: $color-dark;
-                    color: $color-white;
-                }
-            }
-        }
+  
+      &__second-title {
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.36px;
+        margin: 17px 0;
+      }
+      
+      &__text {
+        width: 100%;
+        margin: 0 0 30px 0;
+      }
+  
+      &__learn-more {
+        width: 100%;
+        padding: 0;
+        margin: 12px 0 0 0;
+      }
+  
+      &__get-started {
+        width: 100%;
+      }
+  
+      &__cads-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 40px 0 0 0;
+      }
     }
-
-    .audience__cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-
-        .audience__card {
-            background-color: $color-white;
-            border-radius: 10px;
-            text-align: center;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-
-            &:hover {
-                transform: translateY(-5px);
-            }
-
-            .audience-card-image {
-                width: 142px;
-                height: 142px;
-                margin: 0 auto 15px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-
-            .audience-card-title {
-                font-size: 16px;
-                font-weight: 600;
-                color: $color-dark;
-            }
-
-            &.audience-card-highlighted {
-                background-color: $color-blue;
-                color: $color-white;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-                .audience-card-title {
-                    color: $color-white;
-                }
-            }
-        }
+    
+    .user-card {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 15px;
     }
-
-    @include for-large-up {
-        padding: 40px;
-
-        .audience-cards {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-
-            .audience-card {
-                padding: 30px;
-
-                .audience-card-image {
-                    width: 290px;
-                    height: 300px;
-                }
-
-                .audience-card-title {
-                    font-size: 18px;
-                }
-            }
-        }
-
-        .audience-content {
-            .audience-actions {
-                flex-direction: row;
-                gap: 20px;
-
-                .action-button,
-                .audience-learn-more {
-                    font-size: 16px;
-                    padding: 15px 30px;
-                }
-
-                .action-button {
-                    margin-right: 10px;
-                }
-
-                .audience-learn-more {
-                    margin-left: 10px;
-                }
-            }
-        }
-    }
-}
+  }
+  

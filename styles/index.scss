@@ -1,36 +1,71 @@
-@import 'breakpoints.scss';
-@import 'variables.scss';
-@import 'common.scss';
-@import 'about.scss';
-@import 'customers.scss';
-@import 'features.scss';
-@import 'footer.scss';
-@import 'header.scss';
-@import 'headline.scss';
-@import 'tips.scss';
-@import 'order.scss';
-@import 'audience.scss';
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-html{
+  
+  html, a {
+    color: rgba(43, 41, 45, 1);
+    font-family: 'Work Sans', sans-serif;
     font-size: 16px;
-    font-family: "Work Sans", sans-serif;
-    color: #2b292d;
-}
-.page {
-    width: 320px;
   }
-@media screen and (min-width: 1400px) {
-    .page{
-        position: relative;
-        width: 1400px;
-        margin: 0 auto;
+  @import 'variables';
+  @import 'breakpoints';
+  @import 'header';
+  @import 'footer';
+  @import 'about';
+  @import 'headline.scss';
+  @import 'common';
+  @import 'features';
+  @import 'audience';
+  @import 'order';
+  
+  .page {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+  
+    &__line-for-footer {
+      position: absolute;
+      bottom: 50px;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(43, 41, 45, 0.1);
     }
-}
-
+  }
+  
+  .pinkBacground-wrapper {
+    min-height: 710px;
+    padding: 39px 0 77px;
+    background-color: rgba(243, 198, 189, 1);
+  }
+  
+  @include small-screen {
+    .page {
+      width: 320px;
+      
+      &__line-for-footer {
+        bottom: 623px;
+      }
+    }
+    .pinkBacground-wrapper {
+      min-height: unset;
+      padding: 0;
+    }
+  }
+  .support-mobile {
+    display: none;
+  }
+  
+  @include small-screen {
+    .support-mobile {
+      display: block;
+      
+      &__second-title {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  
 
 
