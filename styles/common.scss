@@ -1,18 +1,20 @@
 .button{
-    width: 100%;
-    height: 48px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 2px;
-    border: none;
-    &_blue{
-        background-color: $color-dark-blue;
-        color: $color-white;
-    }
-    &_white{
-        background-color: $color-white;
-        color: $color-dark-blue;
-    }
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 160px;
+  border: none;
+  cursor: pointer;
+  &_blue{
+    color: #FFFFFF;
+    background-color: #3040C4;
+
+  }
+  &_white{
+    color: #3040C4;
+    background-color: #FFFFFF;
+
+  }
 }
 .hide_desktop{
     @include for-large-up{

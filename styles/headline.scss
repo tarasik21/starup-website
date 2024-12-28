@@ -1,88 +1,63 @@
-.headline{
-    width: 100%;
+.headline {
+    position: relative;
+    padding: 35px 15px 36px;
     @include for-large-up{
         position: relative;
-        margin: auto;
-        width: 1140px;
-        margin-top: 84px;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-around;
-        margin-bottom: 77px;
+        padding-left: 130px;
     }
-    &__content{
-        margin: 35px 15px 33px 15px ;
-        @include for-large-up{
-            position: absolute;
-            z-index: 1;
-            margin: 0;
-        }
-    }
-    &__title{
+
+    &__title {
+      width: 100%;
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: -0.31px;
+      margin: 0;
+      @include for-large-up{
+        position: relative;
+        z-index: 2;
+        width: 754px;
+        font-size: 80px;
         font-weight: 700;
-        font-size: 50px;
-        line-height: 50px;
-        letter-spacing: -0,3125px;
-        margin: 0;
-        @include for-large-up{
-            width: 754px;
-            height: 165px;
-            font-size: 80px;
-            line-height: 78px;
-            letter-spacing: -0,5px;
-            z-index: 1;
-        }
+        line-height: 78px;
+        letter-spacing: -0.5px;
+        margin: 76px 0 0 -4px;
     }
-    &__description{
-        margin-top: 24px;
-        margin-bottom: 0;
+    }
+
+    &__text {
+      width: 100%;
+      margin: 29px 0 32px;
+      @include for-large-up{
+        width: 456px;
         font-size: 24px;
-        line-height: 34px;
         font-weight: 400;
+        line-height: 34px;
+        margin: 43px 0 58px;
     }
-    &__actions{
-        margin-top: 30px;
-        //padding: 0 15px;
-        *:first-child{
-            margin-bottom: 10px;
-        }
-        @include for-large-up{
-            margin-top: 58px;
-            display: flex;
-        }
     }
-    
-    &__learn-more-btn{
-        background-color: $color-white;
-        color: #3040c4;
-        width: 158px;
-        height: 48px;
-        font-size: 18px;
-        font-weight: 700;
-        border-radius: 2px;
-        border: none;
-        margin-top: 15px;
-        @include for-large-up{
-            margin-left: 10px ;
-            margin-top: 0;
+
+    &__banner {
+        position: relative;
+        bottom: 0px;
+        right: 15px;
+        display: block;
+        width: 320px;
+        height: 180px;
+      @include for-large-up{
+        all: unset;
+        position: absolute;
+        max-width: 796px;
+        max-height: 448px;
+        right: 25px;
+        top: 84px;
         }
     }
-    &__banner{
+    &_button{
+
+      @include for-large-down{
+        margin-bottom: 15px;
         width: 100%;
-        margin-bottom: 36px;
-    }
-    &__action-btn{
-        @include for-large-up{
-            width: 100%;
+
         }
     }
-
-}
-
-
-
-
-
-
-
+  }

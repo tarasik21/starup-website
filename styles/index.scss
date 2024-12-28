@@ -11,9 +11,11 @@
 @import 'order.scss';
 @import 'audience.scss';
 
-*{
+* {
     box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+  }
 html{
     font-size: 16px;
     font-family: "Work Sans", sans-serif;
@@ -21,18 +23,12 @@ html{
 }
 .page {
     width: 320px;
-    position: relative;
-    margin: auto;
-
-
   }
 @media screen and (min-width: 1400px) {
     .page{
-    width: 1400px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    max-width: 1400px;
+        position: relative;
+        width: 1400px;
+        margin: 0 auto;
     }
 }
 
